@@ -1,0 +1,35 @@
+
+.page-calce {
+    width: 400px;
+    height: 250px;
+
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.calce {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.calce__hours-sum {
+    min-width: 50px;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
