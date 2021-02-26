@@ -15,8 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
             return hours;
 
         }
-
-        function calc (parent,sum) {
+        function calcOutput (parent,sum) {
 
             parent.textContent = `
                     ${getHours(sum)}
@@ -25,12 +24,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
         calculatorForm.addEventListener('submit', (event) => {
                 event.preventDefault();
-                
+
                 let newSum = calceInput.value;
-                calc(resultWindow,newSum);
+                calcOutput(resultWindow,newSum);
 
                 btn.addEventListener('click', () => {
-                calc(resultWindow,newSum);
+                calcOutput(resultWindow,newSum);
 
                 });
         
