@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const calculatorForm = document.querySelector('.calce'),
         resultWindow = calculatorForm.querySelector('.calce__hours-sum'),
-        calceInput = calculatorForm.querySelector('.calce__input');
+        calceInput = calculatorForm.querySelector('.calce__input'),
+        btn = calculatorForm.querySelector('.button');
 
         function getHours (allSum) {
             let minutes = allSum % 60;
@@ -15,22 +16,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
         }
 
+        function calc (parent,sum) {
+
+            parent.textContent = `
+                    ${getHours(sum)}
+                `;
+        }
 
         calculatorForm.addEventListener('submit', (event) => {
                 event.preventDefault();
-
+                
                 let newSum = calceInput.value;
+                calc(resultWindow,newSum);
 
-                resultWindow.innerHTML = `
-                    <span> ${getHours(newSum)} <span>
-                `;
+                btn.addEventListener('click', () => {
+                calc(resultWindow,newSum);
 
+                });
+        
                 event.target.reset();
-
             
         });
 
-
+    
+    
         
 
 

@@ -1,22 +1,27 @@
 
 .page-calce {
     width: 400px;
-    height: 250px;
+    height: 500px;
 
     margin: 0 auto;
-    border: 1px solid black;
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
     
     
 }
-
 .calce {
+
+    width: 300px;
+    min-height: 250px;
     padding: 10px;
+    border: 1px solid black;
+
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
-    
+    align-items: center;
     
 }
 .calce__hours-sum {
@@ -32,4 +37,19 @@
     border: 1px solid black;
 }
 
+.button {
 
+    margin: 0 auto;
+    width: 50px;
+    height: 20px;
+    
+    
+    background-color: aquamarine;
+}
+.calce__input {
+    margin: 10px 0;
+    width: 180px;
+
+    display: flex;
+
+};
