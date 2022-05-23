@@ -1,1 +1,1 @@
-[Был гениием и остался гением](https://aquariids.github.io/CALCE/)
+[Был гением и остался гением](https://aquariids.github.io/CALCE/)
